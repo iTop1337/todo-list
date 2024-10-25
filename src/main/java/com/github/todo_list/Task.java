@@ -9,14 +9,13 @@ import jakarta.persistence.Id;
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id; // Este é o identificador (chave primária)
+    private Long id;
     
     private String title;
     private String description;
     private boolean completed = false;
 
-    // Getters e Setters
-
+    
     public Long getId() {
         return id;
     }
